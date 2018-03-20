@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  MyEc2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-e689729e
+      InstanceInitiatedShutdownBehavior: stop
+      InstanceType: t2.micro
+      KeyName: SamOregonEC2
+      SecurityGroupIds: [sg-20fa3658]
+      SubnetId: subnet-6a130a1c
+      Tags:
+        -
+          Key: "Name"
+          Value: "CFInstance"
+        -
+          Key: "Client"
+          Value: "CTR"
