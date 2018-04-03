@@ -12,7 +12,7 @@ Resources:
       Tags:
         -
           Key: "Name"
-          Value: "CFInstance"
+          Value: "CFInstance-jen"
         -
           Key: "Client"
           Value: "CTR"
